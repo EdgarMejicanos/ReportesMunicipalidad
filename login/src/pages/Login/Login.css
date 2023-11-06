@@ -1,0 +1,19 @@
+.card {
+
+}
+
+.card .card__from {
+
+}
+
+.login-contaier {
+    border: none;
+    border: transparent !important;
+}
+
+#logo2{
+    width: 175px;
+    height: 175px;
+    justify-content: left;
+
+}

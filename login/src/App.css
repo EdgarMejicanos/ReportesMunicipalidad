@@ -1,0 +1,8 @@
+.custom-select__menu {
+  z-index: 7000 !important;
+  
+}
+
+.update-modal p {
+  z-index: 0 !important;
+}

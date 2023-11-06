@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reportes",
+  "info": {
+    "singularName": "reporte",
+    "pluralName": "reportes",
+    "displayName": "Reporte",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Descripcion": {
+      "type": "text"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Fotografia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Estado": {
+      "type": "enumeration",
+      "enum": [
+        "RECHAZADO",
+        "ESPERA",
+        "APROBADO",
+        "REPARACION",
+        "TERMINADO"
+      ],
+      "default": "ESPERA"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reportes"
+    },
+    "Referencias": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "Comentario": {
+      "type": "text"
+    }
+  }
+}
